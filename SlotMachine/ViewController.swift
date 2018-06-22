@@ -19,12 +19,66 @@ class ViewController: UIViewController {
     @IBOutlet weak var btnBet: UIButton!
     
     var betValue:Double = 0.00
+    
     var totalValue:Double = 0.00
+    
+    let slotAnimationClubs: [UIImage] = [
+        UIImage(named: "card_suits1.png")!,
+        UIImage(named: "card_suits2.png")!,
+        UIImage(named: "card_suits3.png")!,
+        UIImage(named: "card_suits4.png")!,
+        UIImage(named: "card_suits5.png")!,
+        UIImage(named: "card_suits6.png")!,
+        UIImage(named: "card_suits7.png")!,
+        UIImage(named: "card_suits8.png")!,
+        UIImage(named: "card_suits9png")!,
+        UIImage(named: "card_suits10.png")!,
+        ]
+    
+    let slotAnimationHearts: [UIImage] = [
+        UIImage(named: "card_suits4.png")!,
+        UIImage(named: "card_suits5.png")!,
+        UIImage(named: "card_suits6.png")!,
+        UIImage(named: "card_suits7.png")!,
+        UIImage(named: "card_suits8.png")!,
+        UIImage(named: "card_suits9.png")!,
+        UIImage(named: "card_suits10.png")!,
+        UIImage(named: "card_suits1.png")!,
+        UIImage(named: "card_suits2png")!,
+        UIImage(named: "card_suits3.png")!,
+        ]
+    
+    let slotAnimationDiamonds: [UIImage] = [
+        UIImage(named: "card_suits6.png")!,
+        UIImage(named: "card_suits7.png")!,
+        UIImage(named: "card_suits8.png")!,
+        UIImage(named: "card_suits9png")!,
+        UIImage(named: "card_suits10.png")!,
+        UIImage(named: "card_suits1.png")!,
+        UIImage(named: "card_suits2.png")!,
+        UIImage(named: "card_suits3.png")!,
+        UIImage(named: "card_suits4.png")!,
+        UIImage(named: "card_suits5.png")!,
+        ]
+    
+    let slotAnimationSpades: [UIImage] = [
+        UIImage(named: "card_suits9png")!,
+        UIImage(named: "card_suits10.png")!,
+        UIImage(named: "card_suits1.png")!,
+        UIImage(named: "card_suits2.png")!,
+        UIImage(named: "card_suits3.png")!,
+        UIImage(named: "card_suits4.png")!,
+        UIImage(named: "card_suits5.png")!,
+        UIImage(named: "card_suits6.png")!,
+        UIImage(named: "card_suits7.png")!,
+        UIImage(named: "card_suits8.png")!,
+        ]
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
+    
 
     @IBAction func btn_actionPlus(_ sender: Any) {
         betValue += 10.00
@@ -33,17 +87,102 @@ class ViewController: UIViewController {
     
     @IBAction func btn_actionBet(_ sender: Any) {
         
+        let randomSuitRight = Int(arc4random_uniform(3))+1
+        let randomSuitLeft = Int(arc4random_uniform(3))+1
+        let randomSuitCenter = Int(arc4random_uniform(3))+1
+        
+        switch randomSuitRight {
+        case 1:
+            imgRightSlot.animationImages = slotAnimationSpades
+            imgRightSlot.animationDuration = 1.0
+            imgRightSlot.animationRepeatCount = 6
+            imgRightSlot.image = UIImage(named: "frame-9.png")
+        
+        case 2:
+            imgRightSlot.animationImages = slotAnimationClubs
+            imgRightSlot.animationDuration = 1.0
+            imgRightSlot.animationRepeatCount = 6
+            imgRightSlot.image = UIImage(named: "frame-1.png")
+            
+        case 3:
+            imgRightSlot.animationImages = slotAnimationDiamonds
+            imgRightSlot.animationDuration = 1.0
+            imgRightSlot.animationRepeatCount = 6
+            imgRightSlot.image = UIImage(named: "frame-6.png")
+            
+        default:
+            imgRightSlot.animationImages = slotAnimationHearts
+            imgRightSlot.animationDuration = 1.0
+            imgRightSlot.animationRepeatCount = 6
+            imgRightSlot.image = UIImage(named: "frame-4.png")
+        }
+        
+        switch randomSuitLeft {
+        case 1:
+            imgLeftSlot.animationImages = slotAnimationSpades
+            imgLeftSlot.animationDuration = 1.0
+            imgLeftSlot.animationRepeatCount = 6
+            imgLeftSlot.image = UIImage(named: "frame-9.png")
+            
+        case 2 :
+            imgLeftSlot.animationImages = slotAnimationClubs
+            imgLeftSlot.animationDuration = 1.0
+            imgLeftSlot.animationRepeatCount = 6
+            imgLeftSlot.image = UIImage(named: "frame-1.png")
+            
+        case 3:
+            imgLeftSlot.animationImages = slotAnimationDiamonds
+            imgLeftSlot.animationDuration = 1.0
+            imgLeftSlot.animationRepeatCount = 6
+            imgLeftSlot.image = UIImage(named: "frame-6.png")
+        
+        default:
+            imgLeftSlot.animationImages = slotAnimationHearts
+            imgLeftSlot.animationDuration = 1.0
+            imgLeftSlot.animationRepeatCount = 6
+            imgLeftSlot.image = UIImage(named: "frame-4.png")
+        }
+        
+        switch randomSuitCenter {
+        case 1:
+            imgCenterSlot.animationImages = slotAnimationSpades
+            imgCenterSlot.animationDuration = 1.0
+            imgCenterSlot.animationRepeatCount = 6
+            imgCenterSlot.image = UIImage(named: "frame-9.png")
+        
+        case 2:
+            imgCenterSlot.animationImages = slotAnimationClubs
+            imgCenterSlot.animationDuration = 1.0
+            imgCenterSlot.animationRepeatCount = 6
+            imgCenterSlot.image = UIImage(named: "frame-1.png")
+            
+        case 3:
+            imgCenterSlot.animationImages = slotAnimationDiamonds
+            imgCenterSlot.animationDuration = 1.0
+            imgCenterSlot.animationRepeatCount = 6
+            imgCenterSlot.image = UIImage(named: "frame-6.png")
+            
+        default:
+            imgCenterSlot.animationImages = slotAnimationHearts
+            imgCenterSlot.animationDuration = 1.0
+            imgCenterSlot.animationRepeatCount = 6
+            imgCenterSlot.image = UIImage(named: "frame-4.png")
+        }
+        
         
         imgLeftSlot.startAnimating()
         imgRightSlot.startAnimating()
         imgCenterSlot.startAnimating()
         
+        totalValue = resultFinder(a: randomSuitRight, b: randomSuitCenter, c: randomSuitLeft, win: betValue, total: totalValue)
+        
+        lblUserMoney.text = "You have $\(totalValue)"
         
         endGamePopUp()
         
-        
-        
     }
+    
+    
     
     @IBAction func btn_actionStart(_ sender: Any) {
         
@@ -63,6 +202,7 @@ class ViewController: UIViewController {
                                                         self.lblUserMoney.text="You have $\(self.totalValue)"
                                                         
             }))
+        
         present(alertController,animated: true, completion: nil)
         btnStart.isEnabled = false
 }
@@ -96,5 +236,27 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    func resultFinder(a:Int, b:Int, c:Int, win:Double, total:Double) -> Double{
+        var result = win
+        var total1 = total
+        if (a == b && b == c && c == 1){
+            result *= 20
+            total1 += result
+        } else if (a == b && b == c && c == 2){
+            result *= 10
+            total1 += result
+        } else if (a == b && b == c && c == 3){
+            result *= 12
+            total1 += result
+        } else if (a == b && b == c && c == 4){
+            result *= 8
+            total1 += result
+        } else {
+            total1 -= result
+        }
+        return total1
+    }
+   
     
 }
