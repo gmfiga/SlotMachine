@@ -31,7 +31,7 @@ class ViewController: UIViewController {
         UIImage(named: "card_suits6.png")!,
         UIImage(named: "card_suits7.png")!,
         UIImage(named: "card_suits8.png")!,
-        UIImage(named: "card_suits9png")!,
+        UIImage(named: "card_suits9.png")!,
         UIImage(named: "card_suits10.png")!,
         ]
     
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         UIImage(named: "card_suits9.png")!,
         UIImage(named: "card_suits10.png")!,
         UIImage(named: "card_suits1.png")!,
-        UIImage(named: "card_suits2png")!,
+        UIImage(named: "card_suits2.png")!,
         UIImage(named: "card_suits3.png")!,
         ]
     
@@ -52,7 +52,7 @@ class ViewController: UIViewController {
         UIImage(named: "card_suits6.png")!,
         UIImage(named: "card_suits7.png")!,
         UIImage(named: "card_suits8.png")!,
-        UIImage(named: "card_suits9png")!,
+        UIImage(named: "card_suits9.png")!,
         UIImage(named: "card_suits10.png")!,
         UIImage(named: "card_suits1.png")!,
         UIImage(named: "card_suits2.png")!,
@@ -62,7 +62,7 @@ class ViewController: UIViewController {
         ]
     
     let slotAnimationSpades: [UIImage] = [
-        UIImage(named: "card_suits9png")!,
+        UIImage(named: "card_suits9.png")!,
         UIImage(named: "card_suits10.png")!,
         UIImage(named: "card_suits1.png")!,
         UIImage(named: "card_suits2.png")!,
@@ -95,84 +95,91 @@ class ViewController: UIViewController {
         case 1:
             imgRightSlot.animationImages = slotAnimationSpades
             imgRightSlot.animationDuration = 1.0
-            imgRightSlot.animationRepeatCount = 6
+            imgRightSlot.animationRepeatCount = 4
             imgRightSlot.image = UIImage(named: "frame-9.png")
+            imgRightSlot.startAnimating()
         
         case 2:
             imgRightSlot.animationImages = slotAnimationClubs
             imgRightSlot.animationDuration = 1.0
-            imgRightSlot.animationRepeatCount = 6
+            imgRightSlot.animationRepeatCount = 4
             imgRightSlot.image = UIImage(named: "frame-1.png")
+            imgRightSlot.startAnimating()
             
         case 3:
             imgRightSlot.animationImages = slotAnimationDiamonds
             imgRightSlot.animationDuration = 1.0
-            imgRightSlot.animationRepeatCount = 6
+            imgRightSlot.animationRepeatCount = 4
             imgRightSlot.image = UIImage(named: "frame-6.png")
+            imgRightSlot.startAnimating()
             
         default:
             imgRightSlot.animationImages = slotAnimationHearts
             imgRightSlot.animationDuration = 1.0
-            imgRightSlot.animationRepeatCount = 6
+            imgRightSlot.animationRepeatCount = 4
             imgRightSlot.image = UIImage(named: "frame-4.png")
+            imgRightSlot.startAnimating()
         }
         
         switch randomSuitLeft {
         case 1:
             imgLeftSlot.animationImages = slotAnimationSpades
             imgLeftSlot.animationDuration = 1.0
-            imgLeftSlot.animationRepeatCount = 6
+            imgLeftSlot.animationRepeatCount = 4
             imgLeftSlot.image = UIImage(named: "frame-9.png")
+            imgLeftSlot.startAnimating()
             
         case 2 :
             imgLeftSlot.animationImages = slotAnimationClubs
             imgLeftSlot.animationDuration = 1.0
-            imgLeftSlot.animationRepeatCount = 6
+            imgLeftSlot.animationRepeatCount = 4
             imgLeftSlot.image = UIImage(named: "frame-1.png")
+            imgLeftSlot.startAnimating()
             
         case 3:
             imgLeftSlot.animationImages = slotAnimationDiamonds
             imgLeftSlot.animationDuration = 1.0
-            imgLeftSlot.animationRepeatCount = 6
+            imgLeftSlot.animationRepeatCount = 4
             imgLeftSlot.image = UIImage(named: "frame-6.png")
+            imgLeftSlot.startAnimating()
         
         default:
             imgLeftSlot.animationImages = slotAnimationHearts
             imgLeftSlot.animationDuration = 1.0
-            imgLeftSlot.animationRepeatCount = 6
+            imgLeftSlot.animationRepeatCount = 4
             imgLeftSlot.image = UIImage(named: "frame-4.png")
+            imgLeftSlot.startAnimating()
         }
         
         switch randomSuitCenter {
         case 1:
             imgCenterSlot.animationImages = slotAnimationSpades
             imgCenterSlot.animationDuration = 1.0
-            imgCenterSlot.animationRepeatCount = 6
+            imgCenterSlot.animationRepeatCount = 4
             imgCenterSlot.image = UIImage(named: "frame-9.png")
+            imgCenterSlot.startAnimating()
         
         case 2:
             imgCenterSlot.animationImages = slotAnimationClubs
             imgCenterSlot.animationDuration = 1.0
-            imgCenterSlot.animationRepeatCount = 6
+            imgCenterSlot.animationRepeatCount = 4
             imgCenterSlot.image = UIImage(named: "frame-1.png")
+            imgCenterSlot.startAnimating()
             
         case 3:
             imgCenterSlot.animationImages = slotAnimationDiamonds
             imgCenterSlot.animationDuration = 1.0
-            imgCenterSlot.animationRepeatCount = 6
+            imgCenterSlot.animationRepeatCount = 4
             imgCenterSlot.image = UIImage(named: "frame-6.png")
+            imgCenterSlot.startAnimating()
             
         default:
             imgCenterSlot.animationImages = slotAnimationHearts
             imgCenterSlot.animationDuration = 1.0
-            imgCenterSlot.animationRepeatCount = 6
+            imgCenterSlot.animationRepeatCount = 4
             imgCenterSlot.image = UIImage(named: "frame-4.png")
+            imgCenterSlot.startAnimating()
         }
-        
-        
-        imgLeftSlot.startAnimating()
-        imgRightSlot.startAnimating()
-        imgCenterSlot.startAnimating()
         
         totalValue = resultFinder(a: randomSuitRight, b: randomSuitCenter, c: randomSuitLeft, win: betValue, total: totalValue)
         
@@ -229,7 +236,7 @@ class ViewController: UIViewController {
                                                     handler: nil))
         
         
-        if (totalValue == 0 ){
+        if (totalValue <= 0 ){
             present(alertControllerLose, animated: true, completion: nil)
         } else if (totalValue >= 100000.00){
             present(alertControllerWin, animated: true, completion: nil)
