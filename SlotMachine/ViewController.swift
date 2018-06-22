@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet weak var imgCoinStack: UIImageView!
     @IBOutlet weak var lblUserMoney: UILabel!
     @IBOutlet weak var imgLeftSlot: UIImageView!
     @IBOutlet weak var imgCenterSlot: UIImageView!
@@ -241,7 +242,7 @@ class ViewController: UIViewController {
     
     func endGamePopUp (){
         let alertControllerWin = UIAlertController(title: "YOU WON!",
-                                                   message: "Congratulations! You have reached the goal of $1000.00 and won the game!",
+                                                   message: "Congratulations! You have reached the goal of $100000.00 and won the game!",
                                                    preferredStyle: UIAlertControllerStyle.alert)
         alertControllerWin.addAction(UIAlertAction(title: "Thanks!",
                                                    style: UIAlertActionStyle.cancel,
@@ -294,6 +295,13 @@ class ViewController: UIViewController {
         }
         return total1
     }
-   
+    
+    
+    /*func imageMover(){
+        
+        var position = imgCoinStack.center
+        position = CGPoint(x: position.x, y: position.y - )
+        imgCoinStack.center = position
+    }*/
     
 }

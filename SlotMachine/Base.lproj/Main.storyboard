@@ -18,8 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reretrtyt234.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vVI-Ug-prL">
+                                <rect key="frame" x="-1" y="0.0" width="376" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coinfull.png" translatesAutoresizingMaskIntoConstraints="NO" id="4St-0g-gFt">
+                                <rect key="frame" x="349" y="670" width="26" height="661"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_suits1.png" translatesAutoresizingMaskIntoConstraints="NO" id="2y8-RG-YVZ">
-                                <rect key="frame" x="16" y="225" width="104" height="116"/>
+                                <rect key="frame" x="23" y="225" width="104" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_suits4.png" translatesAutoresizingMaskIntoConstraints="NO" id="bVK-g0-f3k">
@@ -27,13 +35,15 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="card_suits9.png" translatesAutoresizingMaskIntoConstraints="NO" id="X3h-bs-GzE">
-                                <rect key="frame" x="255" y="225" width="104" height="116"/>
+                                <rect key="frame" x="247" y="225" width="104" height="116"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dl3-5u-bud">
                                 <rect key="frame" x="142" y="114" width="91" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Start Game"/>
+                                <state key="normal" title="Start Game">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btn_actionStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6ph-5I-aJb"/>
                                 </connections>
@@ -42,13 +52,15 @@
                                 <rect key="frame" x="16" y="64" width="343" height="49"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFj-IK-lM2">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFj-IK-lM2">
                                 <rect key="frame" x="113" y="489" width="46" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="+"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btn_actionPlus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d5o-y1-LR8"/>
                                 </connections>
@@ -57,13 +69,15 @@
                                 <rect key="frame" x="189" y="496" width="74" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="0.99942404029999998" green="0.98555368190000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32z-Dg-JDc">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32z-Dg-JDc">
                                 <rect key="frame" x="150" y="436" width="75" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Place Bet!"/>
+                                <state key="normal" title="Place Bet!">
+                                    <color key="titleColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="btn_actionBet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W3k-GB-wiP"/>
                                 </connections>
@@ -77,6 +91,7 @@
                         <outlet property="btnPlus" destination="bFj-IK-lM2" id="mtH-Yo-55C"/>
                         <outlet property="btnStart" destination="dl3-5u-bud" id="329-GG-axE"/>
                         <outlet property="imgCenterSlot" destination="bVK-g0-f3k" id="OY8-1x-dKN"/>
+                        <outlet property="imgCoinStack" destination="4St-0g-gFt" id="4TO-hP-5PU"/>
                         <outlet property="imgLeftSlot" destination="2y8-RG-YVZ" id="8mn-Xw-v2d"/>
                         <outlet property="imgRightSlot" destination="X3h-bs-GzE" id="4EM-Sb-Aux"/>
                         <outlet property="lblBetAmount" destination="u32-8K-fvI" id="xRH-aX-uMQ"/>
@@ -92,5 +107,7 @@
         <image name="card_suits1.png" width="583" height="622"/>
         <image name="card_suits4.png" width="584" height="619"/>
         <image name="card_suits9.png" width="583" height="622"/>
+        <image name="coinfull.png" width="75" height="949"/>
+        <image name="reretrtyt234.jpg" width="1191" height="670"/>
     </resources>
 </document>
