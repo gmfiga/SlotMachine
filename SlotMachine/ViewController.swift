@@ -84,6 +84,15 @@ class ViewController: UIViewController {
             ]
     }
     
+    @IBAction func unwindToRed(unwindSegue: UIStoryboardSegue) {
+        
+    }
+    
+  
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
+    
 
     @IBAction func btn_actionPlus(_ sender: Any) {
         betValue += 100.00
@@ -246,14 +255,14 @@ class ViewController: UIViewController {
                                                    preferredStyle: UIAlertControllerStyle.alert)
         alertControllerWin.addAction(UIAlertAction(title: "Thanks!",
                                                    style: UIAlertActionStyle.cancel,
-                                                   handler: nil))
+                                                   handler: {[weak alertControllerWin](_) in self.performSegue(withIdentifier: "Winner", sender: self.btnBet)}))
         
         let alertControllerLose = UIAlertController(title: "YOU LOST",
                                                     message: "You really need help! You managed to spend all your money on gambling...what are you gona tell to your family?",
                                                     preferredStyle: UIAlertControllerStyle.alert)
         alertControllerLose.addAction(UIAlertAction(title: "I'll find professional assistance",
                                                     style: UIAlertActionStyle.cancel,
-                                                    handler: nil))
+                                                    handler: {[weak alertControllerWin](_) in self.performSegue(withIdentifier: "Looser", sender: self.btnBet)}))
         
         
         if (totalValue <= 0 ){
@@ -263,6 +272,7 @@ class ViewController: UIViewController {
             btnStart.isEnabled = true
             betValue = 0.00
             totalValue = 0.00
+            performSegue(withIdentifier: "Looser", sender: btnBet)
             
         } else if (totalValue >= 100000.00){
             present(alertControllerWin, animated: true, completion: nil)
@@ -271,6 +281,7 @@ class ViewController: UIViewController {
             btnStart.isEnabled = true
             betValue = 0.00
             totalValue = 0.00
+            
         }
     }
     

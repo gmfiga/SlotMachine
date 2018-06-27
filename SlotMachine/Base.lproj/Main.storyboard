@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="glr-mL-GDc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,6 +11,39 @@
     </dependencies>
     <scenes>
         <!--View Controller-->
+        <scene sceneID="yT1-E5-i2X">
+            <objects>
+                <viewController id="glr-mL-GDc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mEa-u4-pLb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="casinoMain.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="43K-kc-cAF">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" red="0.94220866228512445" green="1" blue="0.57718749587372753" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1z-N5-p6d">
+                                <rect key="frame" x="50" y="601" width="275" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <size key="titleShadowOffset" width="50" height="0.0"/>
+                                <state key="normal" title="LET'S PLAY" backgroundImage="whitebutton.jpg">
+                                    <color key="titleColor" red="1" green="0.046545039429999997" blue="0.0" alpha="0.7346775968" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Edn-7s-X1N"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="JXd-ls-NOL"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yyG-Q1-lLa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596" y="118"/>
+        </scene>
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SlotMachine" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,10 +51,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reretrtyt234.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="vVI-Ug-prL">
-                                <rect key="frame" x="-1" y="0.0" width="376" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="coinfull.png" translatesAutoresizingMaskIntoConstraints="NO" id="4St-0g-gFt">
                                 <rect key="frame" x="349" y="670" width="26" height="661"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -96,18 +125,83 @@
                         <outlet property="imgRightSlot" destination="X3h-bs-GzE" id="4EM-Sb-Aux"/>
                         <outlet property="lblBetAmount" destination="u32-8K-fvI" id="xRH-aX-uMQ"/>
                         <outlet property="lblUserMoney" destination="p0p-x4-xGA" id="Wfj-B2-oV7"/>
+                        <segue destination="UcR-4m-FZc" kind="show" identifier="Winner" id="8aL-C5-eCk"/>
+                        <segue destination="Xhg-vs-ee7" kind="show" identifier="Looser" id="gZT-p8-htZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="Chr-yV-MBA">
+            <objects>
+                <viewController id="Xhg-vs-ee7" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1rB-Zi-uTE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gameOver.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="miB-mp-l1K">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bgs-F2-7nK">
+                                <rect key="frame" x="86" y="578" width="203" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Again" backgroundImage="whitebutton.jpg"/>
+                                <connections>
+                                    <segue destination="mfW-jw-Rfw" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="YhZ-fF-KvF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="UnN-gf-gOS"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhh-Gg-aEU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="mfW-jw-Rfw" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="776.79999999999995" y="545.57721139430294"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="e9b-WI-q5o">
+            <objects>
+                <viewController id="UcR-4m-FZc" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jCt-eJ-rUy">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="winner.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6nC-uR-Bph">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8xq-Ns-1FW">
+                                <rect key="frame" x="90" y="543" width="203" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Play Again" backgroundImage="whitebutton.jpg"/>
+                                <connections>
+                                    <segue destination="aMN-wQ-fQ0" kind="unwind" unwindAction="unwindToRedWithUnwindSegue:" id="uxJ-Rh-BN8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="Yc1-Sb-tfm"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VyS-Uu-Srk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="aMN-wQ-fQ0" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="784.79999999999995" y="-105.69715142428787"/>
+        </scene>
     </scenes>
     <resources>
         <image name="card_suits1.png" width="583" height="622"/>
         <image name="card_suits4.png" width="584" height="619"/>
         <image name="card_suits9.png" width="583" height="622"/>
+        <image name="casinoMain.jpg" width="1200" height="924"/>
         <image name="coinfull.png" width="75" height="949"/>
-        <image name="reretrtyt234.jpg" width="1191" height="670"/>
+        <image name="gameOver.jpg" width="336" height="488"/>
+        <image name="whitebutton.jpg" width="1000" height="1080"/>
+        <image name="winner.jpg" width="176" height="178"/>
     </resources>
 </document>

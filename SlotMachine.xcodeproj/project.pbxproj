@@ -24,9 +24,10 @@
 		C3DF1AB120DD6E2400FF9BBC /* card_suits4.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DF1AA720DD6E2300FF9BBC /* card_suits4.png */; };
 		C3DF1AB220DD6E2400FF9BBC /* card_suits8.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DF1AA820DD6E2300FF9BBC /* card_suits8.png */; };
 		C3DF1AB320DD6E2400FF9BBC /* card_suits7.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DF1AA920DD6E2400FF9BBC /* card_suits7.png */; };
-		C3DF1AB720DD902E00FF9BBC /* coinfull.png in Resources */ = {isa = PBXBuildFile; fileRef = C3DF1AB620DD902E00FF9BBC /* coinfull.png */; };
-		C3DF1ABB20DD938A00FF9BBC /* reretrtyt.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3DF1ABA20DD938900FF9BBC /* reretrtyt.jpg */; };
-		C3DF1ABD20DD93A600FF9BBC /* reretrtyt234.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3DF1ABC20DD93A600FF9BBC /* reretrtyt234.jpg */; };
+		C3E8B8FB20E423A8008C2EC2 /* casinoMain.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3E8B8FA20E423A8008C2EC2 /* casinoMain.jpg */; };
+		C3E8B8FD20E42460008C2EC2 /* whitebutton.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3E8B8FC20E4245F008C2EC2 /* whitebutton.jpg */; };
+		C3E8B8FF20E427EF008C2EC2 /* winner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3E8B8FE20E427EF008C2EC2 /* winner.jpg */; };
+		C3E8B90120E427F4008C2EC2 /* gameOver.jpg in Resources */ = {isa = PBXBuildFile; fileRef = C3E8B90020E427F3008C2EC2 /* gameOver.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,9 +71,10 @@
 		C3DF1AA720DD6E2300FF9BBC /* card_suits4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card_suits4.png; path = ../../../Desktop/card_suits4.png; sourceTree = "<group>"; };
 		C3DF1AA820DD6E2300FF9BBC /* card_suits8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card_suits8.png; path = ../../../Desktop/card_suits8.png; sourceTree = "<group>"; };
 		C3DF1AA920DD6E2400FF9BBC /* card_suits7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = card_suits7.png; path = ../../../Desktop/card_suits7.png; sourceTree = "<group>"; };
-		C3DF1AB620DD902E00FF9BBC /* coinfull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = coinfull.png; path = ../../../Desktop/coinfull.png; sourceTree = "<group>"; };
-		C3DF1ABA20DD938900FF9BBC /* reretrtyt.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = reretrtyt.jpg; path = ../../../Desktop/reretrtyt.jpg; sourceTree = "<group>"; };
-		C3DF1ABC20DD93A600FF9BBC /* reretrtyt234.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = reretrtyt234.jpg; path = ../../../Downloads/reretrtyt234.jpg; sourceTree = "<group>"; };
+		C3E8B8FA20E423A8008C2EC2 /* casinoMain.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = casinoMain.jpg; path = ../../../Desktop/casinoMain.jpg; sourceTree = "<group>"; };
+		C3E8B8FC20E4245F008C2EC2 /* whitebutton.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = whitebutton.jpg; path = ../../../Desktop/whitebutton.jpg; sourceTree = "<group>"; };
+		C3E8B8FE20E427EF008C2EC2 /* winner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = winner.jpg; path = ../../../Desktop/winner.jpg; sourceTree = "<group>"; };
+		C3E8B90020E427F3008C2EC2 /* gameOver.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = gameOver.jpg; path = ../../../Desktop/gameOver.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +125,10 @@
 		C36154D920DC213700020EE1 /* SlotMachine */ = {
 			isa = PBXGroup;
 			children = (
-				C3DF1ABC20DD93A600FF9BBC /* reretrtyt234.jpg */,
-				C3DF1ABA20DD938900FF9BBC /* reretrtyt.jpg */,
-				C3DF1AB620DD902E00FF9BBC /* coinfull.png */,
+				C3E8B90020E427F3008C2EC2 /* gameOver.jpg */,
+				C3E8B8FE20E427EF008C2EC2 /* winner.jpg */,
+				C3E8B8FC20E4245F008C2EC2 /* whitebutton.jpg */,
+				C3E8B8FA20E423A8008C2EC2 /* casinoMain.jpg */,
 				C3DF1AA520DD6E2300FF9BBC /* card_suits1.png */,
 				C3DF1AA220DD6E2300FF9BBC /* card_suits2.png */,
 				C3DF1AA620DD6E2300FF9BBC /* card_suits3.png */,
@@ -276,15 +279,16 @@
 				C3DF1AAA20DD6E2400FF9BBC /* card_suits5.png in Resources */,
 				C3DF1AB220DD6E2400FF9BBC /* card_suits8.png in Resources */,
 				C3DF1AAB20DD6E2400FF9BBC /* card_suits10.png in Resources */,
+				C3E8B90120E427F4008C2EC2 /* gameOver.jpg in Resources */,
 				C36154E520DC213700020EE1 /* LaunchScreen.storyboard in Resources */,
 				C3DF1AB320DD6E2400FF9BBC /* card_suits7.png in Resources */,
 				C3DF1AAE20DD6E2400FF9BBC /* card_suits9.png in Resources */,
+				C3E8B8FD20E42460008C2EC2 /* whitebutton.jpg in Resources */,
 				C3DF1AAC20DD6E2400FF9BBC /* card_suits2.png in Resources */,
-				C3DF1AB720DD902E00FF9BBC /* coinfull.png in Resources */,
+				C3E8B8FB20E423A8008C2EC2 /* casinoMain.jpg in Resources */,
 				C3DF1AAF20DD6E2400FF9BBC /* card_suits1.png in Resources */,
+				C3E8B8FF20E427EF008C2EC2 /* winner.jpg in Resources */,
 				C3DF1AB120DD6E2400FF9BBC /* card_suits4.png in Resources */,
-				C3DF1ABB20DD938A00FF9BBC /* reretrtyt.jpg in Resources */,
-				C3DF1ABD20DD93A600FF9BBC /* reretrtyt234.jpg in Resources */,
 				C36154E220DC213700020EE1 /* Assets.xcassets in Resources */,
 				C36154E020DC213700020EE1 /* Main.storyboard in Resources */,
 			);
